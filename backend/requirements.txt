@@ -3,5 +3,9 @@ flask-cors
 transformers
 torch
 sentencepiece
+<<<<<<< HEAD
 Flask==2.3.2
 gunicorn==21.2.0
+=======
+gunicorn==21.2.0
+>>>>>>> e81dee873a7be7c2de0ff2f3c784f939bda0c911
