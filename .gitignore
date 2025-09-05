@@ -1,0 +1,15 @@
+# Ignore virtual environment
+.venv/
+env/
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules (when frontend is added)
+frontend/node_modules/
