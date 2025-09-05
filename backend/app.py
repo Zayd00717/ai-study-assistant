@@ -38,5 +38,9 @@ def qa():
     result = qa_pipeline(question=question, context=text)
     return jsonify(result)
 
+@app.route("/")
+def home():
+    return "Hello from Flask on Render"
+
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
