@@ -41,7 +41,7 @@ def summarize():
     try:
         summarizer = get_summarizer()
         # make outputs shorter on deployed servers
-        out = summarizer(text, max_length=120, min_length=20, do_sample=False)
+        out = summarizer(text, max_length=500, min_length=150, do_sample=False)
         return jsonify({"summary": out[0]["summary_text"]})
     except Exception as e:
         return jsonify({"error": "Summarization failed: " + str(e)}), 500
