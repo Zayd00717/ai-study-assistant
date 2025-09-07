@@ -61,8 +61,15 @@ def qa():
     except Exception as e:
         return jsonify({"error": "Q&A failed: " + str(e)}), 500
 
+<<<<<<< HEAD
 # Run
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     # host=0.0.0.0 so Render can reach it
     app.run(host="0.0.0.0", port=port, debug=True)
+=======
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+>>>>>>> 9b68565cf63f597b58429a0190ad953190ff8d2c
