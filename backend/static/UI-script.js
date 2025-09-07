@@ -1,4 +1,4 @@
-const API = "/api";
+const API = "https://ai-study-assistant-yqbf.onrender.com/api";
 
 function showOutput(text) {
   document.getElementById("output").textContent = text;
